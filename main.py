@@ -91,12 +91,12 @@ while admin_key:
             t_money = 0.25*quarters + 0.10*dimes + 0.05*nickels + 0.01*pennies
             print(t_money)
 
-    # TODO: 6. Check transaction successful?
+# TODO: 6. Check transaction successful?
             money_status = check_money(user_sel, t_money)
             if money_status:
                 print(f"The cost of the {user_sel} was ${MENU[user_sel]['cost']}")
                 print("Insufficient money. Returning money!")
-    # TODO: 7. Make Coffee.
+# TODO: 7. Make Coffee.
             else:
                 change_ingredients(user_sel)
                 print(f"Here is your {user_sel}")
